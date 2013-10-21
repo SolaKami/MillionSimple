@@ -13,6 +13,9 @@ namespace MillionSimple.Job
 {
     public class AutoJob
     {
+
+        private static string Path = @"\MillionSimple\MillionSimple.Job\AutoJob.cs";
+
         #region 构造函数
 
         public AutoJob(AccountModel accountModel)
@@ -32,6 +35,26 @@ namespace MillionSimple.Job
         #endregion
 
         #region 属性
+
+        public AccountModel Player { get; set; }
+
+        public RunningModel Running
+        {
+            get
+            {
+                return Player.Running;
+            }
+        }
+
+        public Protocol Pro
+        {
+            get
+            {
+                return Player.Pro;
+            }
+        }
+
+        //________________________________________一下过时
 
         private bool _jobMode = false;
         /// <summary>
@@ -53,7 +76,6 @@ namespace MillionSimple.Job
             set { _isEncrypt = value; }
         }
 
-        private static string Path = @"\MillionSimple\MillionSimple.Job\AutoJob.cs";
 
         public event MessageEventHandler Messaging;
         public event MessageEventHandler AutoMessaging;
@@ -73,6 +95,7 @@ namespace MillionSimple.Job
         }
 
         public AccountModel _accountModel;
+        [Obsolete("请使用Player")]
         public AccountModel Account
         {
             get { return _accountModel; }
@@ -94,7 +117,7 @@ namespace MillionSimple.Job
         }
 
         #endregion
-         
+
         #region 方法
 
         #region 登陆
