@@ -94,7 +94,7 @@ namespace MillionSimple.Job
         }
 
         #endregion
-
+         
         #region 方法
 
         #region 登陆

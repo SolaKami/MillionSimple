@@ -19,6 +19,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EXTDLL", "EXTDLL", "{071596F8-116C-40DC-9DA8-F77B5DDBFBC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionSimple.Work", "MillionSimple.Work\MillionSimple.Work.csproj", "{8257C827-BC47-47BD-87C1-E449851FA063}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,16 @@ Global
 		{FAFA45B0-8FD1-4F99-BFF4-8B68527903B4}.Release|Any CPU.ActiveCfg = Release
 		{FAFA45B0-8FD1-4F99-BFF4-8B68527903B4}.Release|Mixed Platforms.ActiveCfg = Release
 		{FAFA45B0-8FD1-4F99-BFF4-8B68527903B4}.Release|x86.ActiveCfg = Release
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8257C827-BC47-47BD-87C1-E449851FA063}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

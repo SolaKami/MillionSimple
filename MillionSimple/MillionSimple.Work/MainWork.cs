@@ -9,13 +9,9 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using MillionSimple.Model;
 using MillionSimple.CommonEnum;
-namespace MillionSimple.Rule
+namespace MillionSimple.Work
 {
-    /// <summary>
-    /// 自动运行类
-    /// </summary>
-   [Obsolete("请使用 Work 层的 MainWork类")]
-    public class RunningRule
+    public class MainWork
     {
         #region 构造函数
 
@@ -143,6 +139,4 @@ namespace MillionSimple.Rule
             return respara;
         }
     }
-
-
 }

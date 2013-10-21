@@ -66,7 +66,15 @@ namespace MillionSimple.Model
         public string Cookie { get; set; }
 
 
+        /// <summary>
+        /// 运行参数类
+        /// </summary>
         public RunningModel Running { get; set; }
+
+        /// <summary>
+        /// 控制器协议
+        /// </summary>
+        public Protocol Pro { get; set; }
 
     }
 }
