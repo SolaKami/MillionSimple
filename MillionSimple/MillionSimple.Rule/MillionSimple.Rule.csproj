@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEEA8553-27FB-4FDA-ADBB-678C402A04FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MillionSimple.Rule</RootNamespace>
+    <AssemblyName>MillionSimple.Rule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunningRule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.CommonEnum.csproj">
+      <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
+      <Name>MillionSimple.CommonEnum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Common\MillionSimple.Common.csproj">
+      <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>
+      <Name>MillionSimple.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Data\MillionSimple.Data.csproj">
+      <Project>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</Project>
+      <Name>MillionSimple.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
+      <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
+      <Name>MillionSimple.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

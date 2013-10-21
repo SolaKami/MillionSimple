@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F19F61F-86A6-439C-B323-43B3D465561E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MillionSimple</RootNamespace>
+    <AssemblyName>进击的MA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManage.Designer.cs">
+      <DependentUpon>AccountManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Million.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Million.Designer.cs">
+      <DependentUpon>Million.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunningForm.Designer.cs">
+      <DependentUpon>RunningForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountManage.resx">
+      <DependentUpon>AccountManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Million.resx">
+      <DependentUpon>Million.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RunningForm.resx">
+      <DependentUpon>RunningForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.CommonEnum.csproj">
+      <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
+      <Name>MillionSimple.CommonEnum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Common\MillionSimple.Common.csproj">
+      <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>
+      <Name>MillionSimple.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Data\MillionSimple.Data.csproj">
+      <Project>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</Project>
+      <Name>MillionSimple.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Job\MillionSimple.Job.csproj">
+      <Project>{F9E5A3A4-2B94-4FF6-8D32-FC1A04125721}</Project>
+      <Name>MillionSimple.Job</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
+      <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
+      <Name>MillionSimple.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Rule\MillionSimple.Rule.csproj">
+      <Project>{DEEA8553-27FB-4FDA-ADBB-678C402A04FA}</Project>
+      <Name>MillionSimple.Rule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app2.ico" />
+    <Content Include="APPDATA\AppConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
