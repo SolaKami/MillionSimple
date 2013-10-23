@@ -11,6 +11,11 @@ namespace MillionSimple.Model
     public class CardModel
     {
 
+        public CardModel()
+        {
+            this.master_card_id = "empty";
+        }
+
         public string serial_id { get; set; }
 
         public string master_card_id { get; set; }

@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeHelper.cs" />
     <Compile Include="CommonDelegate.cs" />
     <Compile Include="CommonSetting.cs" />
     <Compile Include="CommonString.cs" />
+    <Compile Include="EnumHelper.cs" />
     <Compile Include="ErrorMessageLog.cs" />
     <Compile Include="HttpHelper.cs" />
     <Compile Include="HttpMessageLog.cs" />
@@ -53,10 +53,6 @@
     <Compile Include="XmlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.CommonEnum.csproj">
-      <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
-      <Name>MillionSimple.CommonEnum</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
       <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
       <Name>MillionSimple.Model</Name>

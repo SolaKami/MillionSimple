@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</ProjectGuid>
+    <ProjectGuid>{1C97ED75-11B6-4B7C-ABCD-DFAFF61EF91B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MillionSimple.Data</RootNamespace>
-    <AssemblyName>MillionSimple.Data</AssemblyName>
+    <RootNamespace>MillionSimple.Body</RootNamespace>
+    <AssemblyName>MillionSimple.Body</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,12 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>..\EXTDLL\HtmlAgilityPack.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MaSetting.cs" />
-    <Compile Include="MaString.cs" />
+    <Compile Include="BodyPartOne.cs" />
+    <Compile Include="BodyPartTwo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,9 +53,17 @@
       <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>
       <Name>MillionSimple.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Data\MillionSimple.Data.csproj">
+      <Project>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</Project>
+      <Name>MillionSimple.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
       <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
       <Name>MillionSimple.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Work\MillionSimple.Work.csproj">
+      <Project>{8257C827-BC47-47BD-87C1-E449851FA063}</Project>
+      <Name>MillionSimple.Work</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

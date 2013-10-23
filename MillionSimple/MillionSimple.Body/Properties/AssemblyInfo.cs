@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("MillionSimple.Enum")]
+[assembly: AssemblyTitle("MillionSimple.Body")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MillionSimple.Enum")]
+[assembly: AssemblyProduct("MillionSimple.Body")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("3a5b14fb-f01c-4cad-b3f0-40e3a9f3d760")]
+[assembly: Guid("e31e3d0d-65ab-487b-b823-f744d99fcaf2")]
 
 // 程序集的版本信息由下面四个值组成:
 //

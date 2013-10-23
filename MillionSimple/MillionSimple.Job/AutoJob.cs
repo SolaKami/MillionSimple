@@ -11,6 +11,7 @@ using System.Threading;
 
 namespace MillionSimple.Job
 {
+    [Obsolete("请使用Body")]
     public class AutoJob
     {
 
@@ -35,26 +36,8 @@ namespace MillionSimple.Job
         #endregion
 
         #region 属性
-
+        [Obsolete("请使用 YaSeModel")]
         public AccountModel Player { get; set; }
-
-        public RunningModel Running
-        {
-            get
-            {
-                return Player.Running;
-            }
-        }
-
-        public Protocol Pro
-        {
-            get
-            {
-                return Player.Pro;
-            }
-        }
-
-        //________________________________________一下过时
 
         private bool _jobMode = false;
         /// <summary>
@@ -340,7 +323,7 @@ namespace MillionSimple.Job
         public void LickFairy()
         {
             FairySelect();
-            HttpRequestParameter para = GetReq(ActModeEnum.Lick);
+            HttpRequestParameter para = GetReq(ActModeEnum.Attack);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -467,7 +450,7 @@ namespace MillionSimple.Job
         /// </summary>
         public void LookGift()
         {
-            HttpRequestParameter para = GetReq(ActModeEnum.LookPresent);
+            HttpRequestParameter para = GetReq(ActModeEnum.LookGifts);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -500,7 +483,7 @@ namespace MillionSimple.Job
         public string GetGifts()
         {
 
-            HttpRequestParameter para = GetReq(ActModeEnum.GetPresent);
+            HttpRequestParameter para = GetReq(ActModeEnum.GetGifts);
             HttpResponseParameter res = Rule.DoAct(para);
 
             string message = string.Empty;
@@ -569,7 +552,7 @@ namespace MillionSimple.Job
         /// </summary>
         public void SaveCard()
         {
-            HttpRequestParameter para = GetReq(ActModeEnum.SaveCard);
+            HttpRequestParameter para = GetReq(ActModeEnum.SaveCardGroup);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -686,7 +669,7 @@ namespace MillionSimple.Job
         /// </summary>
         public void LookFriend()
         {
-            HttpRequestParameter para = GetReq(ActModeEnum.FriendList);
+            HttpRequestParameter para = GetReq(ActModeEnum.ViewFriendList);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -726,7 +709,7 @@ namespace MillionSimple.Job
         /// <param name="bc"></param>
         public void SetPoint(int ap, int bc)
         {
-            HttpRequestParameter para = GetReq(ActModeEnum.AddPoint);
+            HttpRequestParameter para = GetReq(ActModeEnum.SetPoint);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -769,7 +752,7 @@ namespace MillionSimple.Job
         public void Drink(DrinkEnum type)
         {
             Account.PlayerModel.Running.DrinkType = type;
-            HttpRequestParameter para = GetReq(ActModeEnum.Drink);
+            HttpRequestParameter para = GetReq(ActModeEnum.DrinkTea);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -939,7 +922,7 @@ namespace MillionSimple.Job
         /// </summary>
         public void FriendApplyState()
         {
-            HttpRequestParameter para = GetReq(ActModeEnum.FriendApply);
+            HttpRequestParameter para = GetReq(ActModeEnum.FriendApplyList);
             HttpResponseParameter res = Rule.DoAct(para);
             string message = string.Empty;
             if (res.IsRequestSuccess)
@@ -1307,6 +1290,7 @@ namespace MillionSimple.Job
             ThreadPool.QueueUserWorkItem(new WaitCallback(FangYaoJob), pro);
         }
         #endregion
+
         #region 休闲
         /// <summary>
         /// 休闲
@@ -1442,7 +1426,6 @@ namespace MillionSimple.Job
         /// <param name="obj"></param>
         private void XiuXianJob(object obj)
         {
-            Protocol pro = obj as Protocol;
             try
             {
                 RunningModel running = Account.PlayerModel.Running;

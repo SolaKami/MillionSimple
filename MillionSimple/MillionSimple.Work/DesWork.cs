@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MillionSimple.Model;
-using MillionSimple.CommonEnum;
+using MillionSimple.Enum;
 using MillionSimple.Common;
 
-namespace MillionSimple.Data
+namespace MillionSimple.Work
 {
     public static class Des
     {

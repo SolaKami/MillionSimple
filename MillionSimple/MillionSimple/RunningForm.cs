@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MillionSimple.Model;
-using MillionSimple.Job;
-using MillionSimple.CommonEnum;
+using MillionSimple.Enum;
 using MillionSimple.Data;
 using MillionSimple.Common;
 using System.Threading;
@@ -17,7 +16,6 @@ namespace MillionSimple
 {
     public partial class RunningForm : Form
     {
-
         #region 构造函数
         public static RunningForm _runningForm;
 
@@ -564,9 +562,5 @@ namespace MillionSimple
         #endregion
 
         #endregion
-
-
-
-
     }
 }

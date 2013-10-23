@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml;
 using MillionSimple.Common;
 
-namespace MillionSimple.Data
+namespace MillionSimple.Work
 {
     /// <summary>
     /// 配置文件帮助类

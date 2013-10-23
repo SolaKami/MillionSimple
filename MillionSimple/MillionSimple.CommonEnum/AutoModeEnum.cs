@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MillionSimple.CommonEnum
+namespace MillionSimple.Enum
 {
     /// <summary>
     /// 自动模式枚举

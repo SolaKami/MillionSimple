@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MillionSimple.CommonEnum;
+using MillionSimple.Enum;
 using System.Net;
 
 namespace MillionSimple.Model
@@ -19,24 +19,24 @@ namespace MillionSimple.Model
             set { _act = value; }
         }
 
-        private string _interfaceUrl;
+        private string _requestUrl;
         /// <summary>
         /// 接口地址
         /// </summary>
-        public string InterfaceUrl
+        public string RequestUrl
         {
-            get { return _interfaceUrl; }
-            set { _interfaceUrl = value; }
+            get { return _requestUrl; }
+            set { _requestUrl = value; }
         }
 
-        private string _para;
+        private string _requestData;
         /// <summary>
         /// 发送参数   
         /// </summary>
-        public string Para
+        public string RequestData
         {
-            get { return _para; }
-            set { _para = value; }
+            get { return _requestData; }
+            set { _requestData = value; }
         }
 
         private string _cookie;
@@ -49,7 +49,7 @@ namespace MillionSimple.Model
             set { _cookie = value; }
         }
 
-        public HttpWebRequest req { get; set; }
+        public HttpWebRequest request { get; set; }
 
     }
 }

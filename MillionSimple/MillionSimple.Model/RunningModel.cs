@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MillionSimple.CommonEnum;
+using MillionSimple.Enum;
 
 namespace MillionSimple.Model
 {

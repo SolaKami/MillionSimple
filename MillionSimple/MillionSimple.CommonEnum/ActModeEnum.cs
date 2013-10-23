@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 
-namespace MillionSimple.CommonEnum
+namespace MillionSimple.Enum
 {
     public enum ActModeEnum
     {
@@ -54,10 +54,10 @@ namespace MillionSimple.CommonEnum
         [Description("因子战选择")]
         SelectBattle = 8,
         /// <summary>
-        /// 舔怪
+        /// 攻击妖精
         /// </summary>
-        [Description("舔怪")]
-        Lick = 9,
+        [Description("攻击妖精")]
+        Attack = 9,
         /// <summary>
         /// 因子战战斗
         /// </summary>
@@ -77,21 +77,21 @@ namespace MillionSimple.CommonEnum
         /// </summary>
         AddFriend = 13,
         /// <summary>
-        /// 加点
+        /// 分配自由点数
         /// </summary>
-        AddPoint = 14,
+        SetPoint = 14,
         /// <summary>
         /// 喝茶
         /// </summary>
-        Drink = 15,
+        DrinkTea = 15,
         /// <summary>
-        /// 领取所有礼包
+        /// 领取礼包
         /// </summary>
-        GetPresent = 16,
+        GetGifts = 16,
         /// <summary>
         /// 查看礼包
         /// </summary>
-        LookPresent = 17,
+        LookGifts = 17,
         /// <summary>
         /// 查找好友
         /// </summary>
@@ -104,7 +104,7 @@ namespace MillionSimple.CommonEnum
         /// <summary>
         /// 保存卡组
         /// </summary>
-        SaveCard = 20,
+        SaveCardGroup = 20,
 
         /// <summary>
         /// 删除好友
@@ -112,9 +112,9 @@ namespace MillionSimple.CommonEnum
         RemoveFriend = 21,
 
         /// <summary>
-        /// 查看好友
+        /// 查看好友列表
         /// </summary>
-        FriendList = 22,
+        ViewFriendList = 22,
 
         /// <summary>
         /// 妖精列表
@@ -139,6 +139,6 @@ namespace MillionSimple.CommonEnum
         /// <summary>
         /// 申请情况3
         /// </summary>
-        FriendApply = 27,
+        FriendApplyList = 27,
     }
 }

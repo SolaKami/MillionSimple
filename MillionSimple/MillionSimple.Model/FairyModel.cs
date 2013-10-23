@@ -78,5 +78,14 @@ namespace MillionSimple.Model
             set { _lickCount = value; }
         }
 
+        private int _hp = 0;
+        /// <summary>
+        /// 剩余血量
+        /// </summary>
+        public int Hp
+        {
+            get { return _hp; }
+            set { _hp = value; }
+        }
     }
 }

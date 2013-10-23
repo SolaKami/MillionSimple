@@ -100,9 +100,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.CommonEnum.csproj">
+    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.Enum.csproj">
       <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
-      <Name>MillionSimple.CommonEnum</Name>
+      <Name>MillionSimple.Enum</Name>
     </ProjectReference>
     <ProjectReference Include="..\MillionSimple.Common\MillionSimple.Common.csproj">
       <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>
@@ -112,17 +112,9 @@
       <Project>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</Project>
       <Name>MillionSimple.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MillionSimple.Job\MillionSimple.Job.csproj">
-      <Project>{F9E5A3A4-2B94-4FF6-8D32-FC1A04125721}</Project>
-      <Name>MillionSimple.Job</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
       <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
       <Name>MillionSimple.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MillionSimple.Rule\MillionSimple.Rule.csproj">
-      <Project>{DEEA8553-27FB-4FDA-ADBB-678C402A04FA}</Project>
-      <Name>MillionSimple.Rule</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

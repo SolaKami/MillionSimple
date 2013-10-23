@@ -10,6 +10,11 @@ namespace MillionSimple.Model
     /// </summary>
     public class OtherUserModel
     {
+        public OtherUserModel()
+        {
+            leader_card = new CardModel();
+        }
+
         public string id { get; set; }
 
         public string name { get; set; }

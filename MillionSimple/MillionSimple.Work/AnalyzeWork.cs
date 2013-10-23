@@ -5,12 +5,11 @@ using System.Text;
 using System.Xml;
 using MillionSimple.Model;
 using MillionSimple.Common;
-using MillionSimple.CommonEnum;
-using System.Windows.Forms;
+using MillionSimple.Enum;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
 
-namespace MillionSimple.Data
+namespace MillionSimple.Work
 {
     /// <summary>
     /// 解析类
@@ -18,7 +17,7 @@ namespace MillionSimple.Data
     public class Analyze
     {
 
-        private static string Path = @"\MillionSimple\MillionSimple.Data\Analyze.cs";
+        private const string Path = @"D:\GIT_Repository\MillionSimple\MillionSimple\MillionSimple.Work\AnalyzeWork.cs";
 
         #region 获取玩家:name 的妖精序列号
         /// <summary>
@@ -747,7 +746,7 @@ namespace MillionSimple.Data
                 card.evolution_price = xmlDoc.GetElementsByTagName("evolution_price")[0].InnerText;
                 card.plus_limit_count = xmlDoc.GetElementsByTagName("plus_limit_count")[0].InnerText;
                 card.limit_over = xmlDoc.GetElementsByTagName("limit_over")[0].InnerText;
-                card.name = AttributeHelper.GetEnumDes(typeof(CardEnum), card.master_card_id);
+                card.name = EnumHelper.GetEnumDes(typeof(CardEnum), card.master_card_id);
             }
             catch (Exception ex)
             {

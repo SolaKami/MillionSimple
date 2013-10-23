@@ -40,13 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWork.cs" />
+    <Compile Include="AnalyzeWork.cs" />
+    <Compile Include="ConfigWork.cs" />
+    <Compile Include="ConnectWork.cs" />
+    <Compile Include="DesWork.cs" />
+    <Compile Include="ParameterWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.CommonEnum.csproj">
+    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.Enum.csproj">
       <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
-      <Name>MillionSimple.CommonEnum</Name>
+      <Name>MillionSimple.Enum</Name>
     </ProjectReference>
     <ProjectReference Include="..\MillionSimple.Common\MillionSimple.Common.csproj">
       <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>

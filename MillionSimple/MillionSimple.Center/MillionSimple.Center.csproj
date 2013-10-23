@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</ProjectGuid>
+    <ProjectGuid>{BFAD5DEC-610F-4627-90C0-0122C742DC3D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MillionSimple.CommonEnum</RootNamespace>
-    <AssemblyName>MillionSimple.CommonEnum</AssemblyName>
+    <RootNamespace>MillionSimple.Center</RootNamespace>
+    <AssemblyName>MillionSimple.Center</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,14 +40,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActModeEnum.cs" />
-    <Compile Include="AutoModeEnum.cs" />
-    <Compile Include="CardEnum.cs" />
-    <Compile Include="CountryEnum.cs" />
-    <Compile Include="DrinkEnum.cs" />
-    <Compile Include="Name.cs" />
-    <Compile Include="PlayerStateEnum.cs" />
+    <Compile Include="CenterOne.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MillionSimple.Body\MillionSimple.Body.csproj">
+      <Project>{1C97ED75-11B6-4B7C-ABCD-DFAFF61EF91B}</Project>
+      <Name>MillionSimple.Body</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.CommonEnum\MillionSimple.Enum.csproj">
+      <Project>{B455D340-93CD-4194-8266-9AA0B6B1DD3A}</Project>
+      <Name>MillionSimple.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Common\MillionSimple.Common.csproj">
+      <Project>{A79123FF-5CBA-4028-807A-A2A32F90C8F2}</Project>
+      <Name>MillionSimple.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Data\MillionSimple.Data.csproj">
+      <Project>{75E10269-63AF-4A73-AF1E-96EDC1BA029B}</Project>
+      <Name>MillionSimple.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Model\MillionSimple.Model.csproj">
+      <Project>{3C83CA45-8A84-43AC-AE85-C0F2DB3BF72D}</Project>
+      <Name>MillionSimple.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MillionSimple.Work\MillionSimple.Work.csproj">
+      <Project>{8257C827-BC47-47BD-87C1-E449851FA063}</Project>
+      <Name>MillionSimple.Work</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
